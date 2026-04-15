@@ -1,0 +1,18 @@
+{
+  "name": "lld-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --enable-source-maps --loader ts-node/esm src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node --enable-source-maps dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
+
